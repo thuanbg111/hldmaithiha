@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liên hệ – Hộ Kinh Doanh Mai Thị Hà (4711)</title>
+<style>
+  :root{
+    /* PALETTE MỚI (tím than + hổ phách) */
+    --primary:#6d28d9;      /* violet-700 */
+    --primary-600:#7c3aed;  /* violet-600 */
+    --blue:#f59e0b;         /* amber-500 */
+    --border:#e5e7eb;
+    --shadow:0 6px 24px rgba(109,40,217,.12);
+    --ink:#111827;
+    --muted:#6b7280;
+    --card:#ffffff;
+    --bg:#f7fafc;
+    --radius:14px;
+  }
+  /* Reset & base */
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; min-height:100vh; display:flex; flex-direction:column;
+    font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.7;
+  }
+  main{flex:1}
+
+  /* Header */
+  header{
+    background:linear-gradient(135deg,var(--primary),var(--blue));
+    color:#fff; text-align:center; padding:18px 10px; box-shadow:var(--shadow);
+  }
+  header h1{margin:0 0 6px; font-size:24px; letter-spacing:.2px}
+  header p{margin:4px 0 0; opacity:.92; font-size:13px}
+  nav{margin-top:8px}
+  nav a{
+    color:#fff; text-decoration:none; font-weight:600; margin:0 8px;
+    padding:9px 12px; border-radius:999px; background:rgba(255,255,255,.14)
+  }
+  nav a:hover{background:rgba(255,255,255,.22)}
+
+  /* Layout */
+  .wrap{max-width:1040px; margin:auto; padding:22px 18px}
+  h2{color:var(--primary); text-align:center; margin:12px 0 6px}
+
+  .summary{ text-align:center; color:var(--muted); margin:4px 0 12px}
+  .summary b{color:var(--ink)}
+
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow); padding:18px;
+  }
+
+  /* Form */
+  .field{margin-bottom:12px}
+  .field label{display:block; font-weight:700; margin-bottom:6px}
+  .control{
+    width:100%;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:11px 12px;
+    font-size:15px;
+    background:#fff;
+    outline:none;
+    display:block;
+  }
+  textarea.control{min-height:140px; resize:vertical}
+  .actions{margin-top:6px}
+  .btn{
+    appearance:none; border:0; cursor:pointer; font-weight:700;
+    padding:12px 16px; border-radius:999px; color:#fff;
+    background:linear-gradient(135deg,var(--primary),var(--blue));
+    box-shadow:0 8px 18px rgba(109,40,217,.18);
+  }
+  .btn:hover{filter:brightness(1.03)}
+
+  /* Map */
+  .map{min-height:380px; border-radius:12px; overflow:hidden}
+  .map iframe{width:100%; height:100%; border:0; display:block}
+
+  /* Footer */
+  footer{
+    background:#1f2937; color:#f9fafb; text-align:center; padding:14px 10px; margin-top:24px;
+  }
+
+  /* Responsive */
+ @media(max-width:768px){
+  /* Giữ tiêu đề nhỏ hơn như cũ */
+  header h1{ font-size:20px }
+
+  /* Sửa nav cho mobile: bọc dòng + khoảng cách đều + thu nhỏ padding */
+  nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;                /* thay cho margin trên <a> */
+    margin-top:8px;
+  }
+  nav a{
+    margin:0;               /* bỏ margin cũ để tránh đè */
+    padding:8px 12px;       /* thu nhỏ cho vừa màn hình */
+    font-size:14px;
+    line-height:1;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /* Lưới sản phẩm 1 cột như cũ */
+  .grid{ grid-template-columns:1fr }
+}
+
+</style>
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>HỘ KINH DOANH MAI THỊ HÀ</h1>
+    <p>Bán lẻ lương thực – thực phẩm – đồ uống – thuốc lá/thuốc lào (4711) • Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa</p>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="gioi-thieu.html">Giới thiệu</a>
+      <a href="san-pham.html">Sản phẩm</a>
+      <a href="lien-he.html">Liên hệ</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main class="wrap">
+    <h2>Liên hệ với chúng tôi</h2>
+    <div class="summary">
+      <b>Địa chỉ:</b> Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa •
+      <b>Điện thoại:</b> <a href="tel:0962658043">0962 658 043</a> •
+      <b>Email:</b> lienhe@hokinhdoanhmaithiha.website
+    </div>
+
+    <div class="grid">
+      <!-- FORM -->
+      <section class="card">
+        <form action="mailto:contact@hkd-damhop.site" method="post" enctype="text/plain" autocomplete="on">
+          <div class="field">
+            <label for="name">Họ và tên</label>
+            <input class="control" id="name" name="name" type="text" placeholder="Nhập họ và tên" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input class="control" id="email" name="email" type="email" placeholder="Nhập email" required>
+          </div>
+
+          <div class="field">
+            <label for="message">Nội dung</label>
+            <textarea class="control" id="message" name="message" placeholder="Mô tả yêu cầu, danh mục cần mua…"></textarea>
+          </div>
+
+          <div class="actions">
+            <button class="btn" type="submit">📨 Gửi liên hệ</button>
+          </div>
+        </form>
+
+        <div style="margin-top:12px; color:var(--muted); line-height:1.6">
+          Hoặc gọi nhanh: <b style="color:var(--ink)">0962 658 043</b><br/>
+          <b>Địa chỉ:</b> Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa, Việt Nam
+        </div>
+      </section>
+
+      <!-- MAP -->
+      <section class="card map">
+  <iframe
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps?q=Khu%20Trung%20T%C3%A2m,%20X%C3%A3%20C%E1%BA%A9m%20Li%C3%AAn,%20Huy%E1%BB%87n%20C%E1%BA%A9m%20Thu%E1%BB%B7,%20T%E1%BB%89nh%20Thanh%20H%C3%B3a,%20Vi%E1%BB%87t%20Nam&output=embed"
+    title="Bản đồ – Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Thanh Hóa, Việt Nam">
+  </iframe>
+</section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Hộ Kinh Doanh Mai Thị Hà – Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa, Việt Nam • ĐT: 0962 658 043
+  </footer>
+</body>
+</html>

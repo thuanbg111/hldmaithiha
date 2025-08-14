@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hộ Kinh Doanh Mai Thị Hà – Bán lẻ thực phẩm & đồ uống (4711)</title>
+
+  <!-- (Nếu dùng FB verification thì dán meta ngay dưới đây) -->
+  <!-- <meta name="facebook-domain-verification" content="YOUR_CODE_HERE" /> -->
+
+  <style>
+    :root{
+      /* PALETTE MỚI (tím than + hổ phách, khác hoàn toàn bản cũ) */
+      --primary:#6d28d9;      /* violet-700 */
+      --primary-600:#7c3aed;  /* violet-600 */
+      --blue:#f59e0b;         /* amber-500 (dùng làm màu nhấn trong gradient header) */
+      --text:#111827;         /* gray-900 */
+      --muted:#6b7280;        /* gray-500/600 */
+      --card:#ffffff;
+      --border:#e5e7eb;
+      --shadow:0 6px 24px rgba(109,40,217,.12);
+      --footer-bg:#1f2937;    /* gray-800 */
+      --footer-fg:#f9fafb;    /* gray-50 */
+      --badge-bg:#f5f3ff;     /* violet-50 */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--text);line-height:1.7;background:#f7fafc
+    }
+
+    /* HEADER giữ bố cục cũ – đổi màu */
+    header{
+      background:linear-gradient(135deg, var(--primary) 0%, var(--blue) 100%);
+      color:#fff;text-align:center;padding:18px 10px;box-shadow:var(--shadow)
+    }
+    header h1{margin:0 0 4px;font-size:24px;letter-spacing:.2px}
+    header p{margin:0;opacity:.92;font-size:13px}
+    nav{margin-top:8px}
+    nav a{
+      display:inline-block;margin:0 8px;padding:10px 12px;border-radius:999px;
+      color:#fff;text-decoration:none;background:rgba(255,255,255,.14)
+    }
+    nav a:hover{background:rgba(255,255,255,.22)}
+
+    /* HERO ảnh */
+    .banner{width:100%;max-height:420px;object-fit:cover;display:block}
+
+    /* WRAPPER chung */
+    .wrap{max-width:1040px;margin:auto;padding:18px}
+    h2{color:var(--primary);text-align:center;margin:22px 0 8px}
+    .lead{max-width:820px;margin:0 auto 22px;text-align:center;color:var(--muted)}
+
+    /* CARD/GRID giữ như cũ */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{
+      background:var(--card);border:1px solid var(--border);border-radius:14px;
+      overflow:hidden;box-shadow:var(--shadow);transition:transform .2s ease
+    }
+    .card:hover{transform:translateY(-2px)}
+    .card img{width:100%;height:180px;object-fit:cover;display:block}
+    .card h3{margin:10px 0 0;color:var(--primary);font-size:18px;text-align:center}
+    .card p{margin:8px 14px 16px;text-align:center;font-size:14px;color:#1f2937}
+
+    /* KHỐI LIÊN HỆ/PHÁP LÝ */
+    .contact{
+      max-width:860px;margin:10px auto 30px;background:var(--card);border:1px solid var(--border);
+      border-radius:14px;box-shadow:var(--shadow);padding:18px
+    }
+    .contact h3{margin:0 0 10px;color:var(--primary)}
+    .contact ul{list-style:disc;padding-left:22px;margin:8px 0}
+    .contact li{margin:6px 0}
+    .badge{
+      display:inline-block;margin-left:8px;padding:4px 10px;border-radius:999px;
+      background:var(--badge-bg);color:var(--primary);font-size:12px;font-weight:700
+    }
+
+    footer{background:var(--footer-bg);color:var(--footer-fg);text-align:center;padding:14px 10px}
+
+    @media(max-width:992px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:768px){
+      header h1{font-size:20px}
+      .grid{grid-template-columns:1fr}
+      nav a{margin:0 4px;padding:9px 10px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>HỘ KINH DOANH MAI THỊ HÀ</h1>
+  <p>Bán lẻ lương thực – thực phẩm – đồ uống – thuốc lá/thuốc lào (4711) • Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa</p>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="gioi-thieu.html">Giới thiệu</a>
+    <a href="san-pham.html">Hàng hóa</a>
+    <a href="lien-he.html">Liên hệ</a>
+  </nav>
+</header>
+
+<!-- Thay ảnh banner theo kho ảnh của bạn -->
+<img class="banner" src="images/banner-dam-hop.jpg" alt="Hộ Kinh Doanh Đàm Hợp – Cẩm Bình, Cẩm Thủy, Thanh Hóa" loading="lazy"/>
+
+<section class="wrap">
+  <h2>Chào mừng quý khách</h2>
+  <p class="lead">
+    Cửa hàng phục vụ nhu cầu **ngành 4711**: lương thực, thực phẩm, đồ uống và thuốc lá/thuốc lào.  
+    Hàng chuẩn nguồn gốc – Giá hợp lý – Phục vụ nhanh tại <b>Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy</b>.
+  </p>
+
+  <h2>Nhóm hàng tiêu biểu</h2>
+  <div class="grid">
+    <article class="card">
+      <img src="images/danh-muc-luong-thuc.jpg" alt="Lương thực" loading="lazy">
+      <h3>Lương thực</h3>
+      <p>Gạo, nếp, ngũ cốc, mì/bún khô…</p>
+    </article>
+    <article class="card">
+      <img src="images/danh-muc-thuc-pham.jpg" alt="Thực phẩm" loading="lazy">
+      <h3>Thực phẩm</h3>
+      <p>Gia vị, đồ hộp, mắm muối, đồ khô…</p>
+    </article>
+    <article class="card">
+      <img src="images/danh-muc-do-uong.jpg" alt="Đồ uống" loading="lazy">
+      <h3>Đồ uống</h3>
+      <p>Nước giải khát, sữa, trà/cà phê, bia…</p>
+    </article>
+    <article class="card">
+      <img src="images/danh-muc-thuoc-la.jpg" alt="Thuốc lá/thuốc lào" loading="lazy">
+      <h3>Thuốc lá / Thuốc lào</h3>
+      <p>Cung ứng theo đúng quy định hiện hành.</p>
+    </article>
+    <article class="card">
+      <img src="images/danh-muc-gia-dung.jpg" alt="Hóa – mỹ phẩm, gia dụng" loading="lazy">
+      <h3>Hóa – mỹ phẩm, gia dụng</h3>
+      <p>Bột giặt, nước rửa chén, dầu gội, xà phòng…</p>
+    </article>
+    <article class="card">
+      <img src="images/danh-muc-tien-ich.jpg" alt="Tiện ích" loading="lazy">
+      <h3>Tiện ích</h3>
+      <p>Bật lửa, pin, giấy vệ sinh, văn phòng phẩm nhỏ…</p>
+    </article>
+  </div>
+
+  <div class="contact">
+    <h3>Thông tin & liên hệ <span class="badge">Pháp lý</span></h3>
+    <ul>
+      <li><b>Hộ kinh doanh:</b> HỘ KINH DOANH MAI THỊ HÀ</li>
+      <li><b>Mã số hộ kinh doanh:</b> 8936435347-001</li>
+      <li><b>Mã số đăng ký kinh doanh:</b> 26H8007622</li>
+      <li><b>Ngành chính:</b> 4711 – Bán lẻ lương thực, thực phẩm, đồ uống, thuốc lá/thuốc lào</li>
+      <li><b>Địa chỉ:</b> Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa, Việt Nam</li>
+      <li><b>Điện thoại:</b> <a href="tel:0962658043">0962 658 043</a></li>
+      <li><b>Email:</b> lienhe@hokinhdoanhmaithiha.website</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  © 2025 Hộ Kinh Doanh Mai Thị Hà – Khu Trung Tâm, Xã Cẩm Liên, Huyện Cẩm Thủy, Tỉnh Thanh Hóa, Việt Nam • ĐT: 0962 658 043
+</footer>
+</body>
+</html>
